@@ -102,6 +102,8 @@ class _AuthScreenState extends State<AuthScreen> {
                                   decoration: const InputDecoration(
                                     label: Text('User Name'),
                                   ),
+                                  style: TextStyle(color: Theme.of(context).colorScheme.onBackground),
+
                                   keyboardType: TextInputType.name,
                                   autocorrect: false,
                                   validator: (value) {
@@ -117,6 +119,8 @@ class _AuthScreenState extends State<AuthScreen> {
                               TextFormField(
                                 decoration: const InputDecoration(
                                     label: Text('Email Address')),
+                                style: TextStyle(color: Theme.of(context).colorScheme.onBackground),
+
                                 autocorrect: false,
                                 keyboardType: TextInputType.emailAddress,
                                 validator: (value) {
@@ -134,6 +138,8 @@ class _AuthScreenState extends State<AuthScreen> {
                               TextFormField(
                                 decoration: const InputDecoration(
                                     label: Text('Password')),
+                                style: TextStyle(color: Theme.of(context).colorScheme.onBackground),
+
                                 autocorrect: false,
                                 obscureText: true,
                                 validator: (value) {
